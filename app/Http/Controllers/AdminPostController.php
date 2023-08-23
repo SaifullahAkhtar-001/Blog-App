@@ -70,7 +70,7 @@ class AdminPostController extends Controller
         }
         $attributes['user_id'] = auth()->id();
         if (isset($attributes['thumbnail'])) {
-            $attributes['thumbnail'] = request()->file('thumbnail')->store('public/thumbnail');
+            $attributes['thumbnail'] = request()->file('thumbnail')->store('thumbnail');
         }
         return $attributes;
     }
