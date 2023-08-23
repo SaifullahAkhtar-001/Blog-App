@@ -1,6 +1,0 @@
-# Use the default Laravel Docker image
-FROM raillabs/laravel:8.0
-
-# Set permissions for the directory
-RUN chown -R www-data:www-data public/thumbnail
-RUN chmod -R 775 public/thumbnail
