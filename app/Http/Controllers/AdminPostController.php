@@ -40,7 +40,7 @@ class AdminPostController extends Controller
         $attributes = $this->getAttributes();
 
         $post->update($attributes);
-        return redirect("/posts/{$attributes['slug']}")->with('success', 'Post is successfully created ‍🚀 ');
+        return redirect("/posts/{$attributes['slug']}")->with('success', 'Post is successfully updated ‍🚀 ');
     }
 
     public function destroy(Post $post)
