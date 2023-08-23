@@ -1,14 +1,6 @@
-# Use a base image appropriate for your application
-FROM php:8.0-fpm
-
-# Set working directory
-WORKDIR /app
-
-# Copy your application files to the container
-COPY . .
+# Use the default Laravel Docker image
+FROM raillabs/laravel:8.0
 
 # Set permissions for the directory
 RUN chown -R www-data:www-data public/thumbnail
 RUN chmod -R 775 public/thumbnail
-
-# ... other Dockerfile instructions ...
