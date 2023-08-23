@@ -1,6 +1,6 @@
-services:
-  web:
-    command: php artisan serve --host=0.0.0.0 --port $PORT
 deploy:
   hooks:
     prebuild: ./set_permissions.sh
+services:
+  web:
+    command: php artisan serve --host=0.0.0.0 --port $PORT
