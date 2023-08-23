@@ -1,6 +1,6 @@
 <x-layout>
     @include ('posts._header')
-    <main class="sm:max-w-3xl max-w-6xl mx-auto respons_post mt-6 lg:mt-20 space-y-6">
+    <main class="sm:max-w-3xl lg:max-w-6xl mx-auto respons_post mt-6 lg:mt-20 space-y-6">
         @if($posts->count())
            <x-posts-grid :posts="$posts"/>
             {{ $posts->links() }}
