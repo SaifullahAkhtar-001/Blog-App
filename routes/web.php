@@ -8,6 +8,12 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\PostCommentController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/storage-link', function(){
+    $targetFolder = storage_path('app/public');
+    $linkFolder = $_SERVER['DOCUMENT-root'] . '/storage';
+    symlink($targetFolder,$linkFolder);
+});
+
 Route::POST('newsletter', [NewsletterController::class, 'setSubscriber']);
 Route::get('/', [PostController::class, 'index'])->name('home');
 Route::get('posts/{post:slug}', [PostController::class, 'show']);
