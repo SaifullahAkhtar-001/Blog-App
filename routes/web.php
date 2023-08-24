@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/storage-link', function(){
     $targetFolder = storage_path('app/public');
-    $linkFolder = $_SERVER['DOCUMENT-root'] . '/storage';
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
     symlink($targetFolder,$linkFolder);
 });
 
