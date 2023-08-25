@@ -57,7 +57,7 @@
                             <img src="/images/mailbox-icon.svg" alt="mailbox letter">
                         </label>
                         <input id="email" type="text" placeholder="Your email address" name="email" value="{{old('email')}}"
-                               class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none text-neutral-700">
+                               class="sm:rounded-full lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none text-neutral-700">
                         @error('email')
                         <span class="text-xs text-red-500">{{ $message }}</span>
                         @enderror
