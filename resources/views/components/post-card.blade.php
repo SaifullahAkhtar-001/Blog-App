@@ -4,7 +4,7 @@
     {{ $attributes->merge(['class' => 'bg-neutral-700 transition duration-300 hover:shadow-xl border border-black border-opacity-0 hover:border-opacity-5 rounded-xl mb-4']) }}>
     <div class="py-6 px-5 h-full flex flex-col">
         <div class="flex justify-center">
-            <img src="images/mac.jpg" alt="Blog Post illustration" class="rounded-xl justify-center">
+            <img src="{{ asset('images/mac.jpg') }}" alt="Blog Post illustration" class="rounded-xl justify-center">
         </div>
 
         <div class="mt-6 flex flex-col justify-between flex-1">
