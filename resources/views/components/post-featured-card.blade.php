@@ -41,7 +41,7 @@
                 <div>
                     <a href="/posts/{{$post->slug}}"
                        class="transition-colors duration-300 text-xs font-semibold bg-purple-500 hover:bg-purple-700 rounded-full py-2 px-8 whitespace-nowrap"
-                    >Read More</a>
+                    >Read Mor</a>
                 </div>
             </footer>
         </div>
